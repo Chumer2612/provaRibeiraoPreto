@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstring> 
+using namespace std;
+int main() {
+    
+    const int TAMANHO_MAXIMO = 100;
+    char string[TAMANHO_MAXIMO];
+
+    cout<<"Digite uma string: ";
+    cin.getline(string, TAMANHO_MAXIMO);
+
+    int comprimento = strlen(string);
+
+    for(int i = 0; i < comprimento / 2; i++){
+        char temp = string[i];
+        string[i] = string[comprimento - i - 1];
+        string[comprimento - i - 1] = temp;
+    }
+
+    cout<<"String invertida: "<< string <<endl;
+
+    return 0;
+}
