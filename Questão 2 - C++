@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int numero;
+    int a = 0, b = 1, c = 0;
+
+    cout <<"Digite um numero inteiro:"<<endl;
+    cin >> numero;
+
+
+    while (b < numero) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    if (b == numero){
+        cout <<numero<< " Pertence a sequencia de Fibonacci."<<endl;
+    }
+    else
+        cout <<numero<< " Nao pertence a sequencia de Fibonacci."<<endl;
+    
+    return 0;
+}

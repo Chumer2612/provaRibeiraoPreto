@@ -1,0 +1,9 @@
+Basta ligar um dos interruptores e deixá-lo ligado por alguns minutos. Após isso, desligue o interruptor. Em seguida, ligue outro interruptor diferente e vá verificar duas das três salas.
+Aqui está o teste lógico:
+
+Se a lâmpada está apagada e fria, significa que ela não foi acessa.
+Se a lâmpada está apagada e quente, indica que ela foi acessa, mas foi apagada.
+Se a luz está acesa, o interruptor que está ativo no momento controla essa lâmpada.
+
+Com isso, podemos determinar qual interruptor controla cada lâmpada visitando apenas duas salas. Por exemplo, se a sala 1 estiver com a lâmpada fria, isso significa que ela não 
+foi acessa. Se a sala 2 estiver com a lâmpada acesa, sabemos que o interruptor ligado no momento controla essa lâmpada, e então concluímos que o primeiro interruptor controla a lâmpada da sala 3.
